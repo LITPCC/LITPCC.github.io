@@ -105,3 +105,28 @@ h3{
 .page-footer{
 	margin-top: 40px;
 }
+@media screen and (max-width: 992px){
+	.grid__display--people{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 40px;
+		grid-row-gap: 40px;
+		grid-template-rows: repeat(3, 400px);
+		grid-template-areas: 
+			"person1 person2"
+			"person3 person4" 
+			"person5 person6";
+	}
+}
+@media screen and (max-width: 550px){
+	.grid__display--people{
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 40px;
+		grid-row-gap: 40px;
+		grid-template-rows: repeat(6, 400px);
+		grid-template-areas: 
+			"person1" "person2" "person3"
+			"person4" "person5" "person6";
+	}
+}
