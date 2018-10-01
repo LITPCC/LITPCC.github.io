@@ -23,7 +23,6 @@ h3{
 .hero__overlay{
 	height: 500px;
 	width: 100vw;
-	/* background-color: rgba(255, 0, 0, 0.2); */
 }
 .hero__overlay--text{
 	width: 100%;
@@ -75,6 +74,8 @@ h3{
 .person__profile--picture{
 	height: 50%;
 	background-color: grey;
+	background-position: 0% 20%;
+	background-size: cover;
 }
 .person__profile--name{
 	text-align: center;
@@ -84,20 +85,38 @@ h3{
 	padding: 20px;
 	text-align: center;
 }
+#person__profile--picture-1{
+	background-image: url('../assets/images/profile/kody.jpg')
+}
 .person__profile--1{
 	grid-area: person1;
+}
+#person__profile--picture-2{
+	background-image: url('../assets/images/profile/victor.jpg')
 }
 .person__profile--2{
 	grid-area: person2;
 }
+#person__profile--picture-3{
+	background-image: url('../assets/images/profile/evelyn.jpg')
+}
 .person__profile--3{
 	grid-area: person3;
+}
+#person__profile--picture-4{
+	background-image: url('../assets/images/profile/tim.jpg')
 }
 .person__profile--4{
 	grid-area: person4;
 }
+#person__profile--picture-5{
+	background-image: url('../assets/images/profile/hiron.jpg')
+}
 .person__profile--5{
 	grid-area: person5;
+}
+#person__profile--picture-6{
+	background-image: url('../assets/images/profile/richard.jpg')
 }
 .person__profile--6{
 	grid-area: person6;
@@ -107,10 +126,7 @@ h3{
 }
 @media screen and (max-width: 992px){
 	.grid__display--people{
-		display: grid;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 40px;
-		grid-row-gap: 40px;
 		grid-template-rows: repeat(3, 400px);
 		grid-template-areas: 
 			"person1 person2"
@@ -120,10 +136,7 @@ h3{
 }
 @media screen and (max-width: 550px){
 	.grid__display--people{
-		display: grid;
 		grid-template-columns: 1fr;
-		column-gap: 40px;
-		grid-row-gap: 40px;
 		grid-template-rows: repeat(6, 400px);
 		grid-template-areas: 
 			"person1" "person2" "person3"
