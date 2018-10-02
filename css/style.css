@@ -60,11 +60,12 @@ h3{
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 40px;
 	grid-row-gap: 40px;
-	grid-template-rows: 400px 400px;
+	grid-template-rows: repeat(3, 400px);
 	grid-template-areas: 
 		"person1 person2 person3"
-		"person4 person5 person6";
-}
+		"person4 person5 person6"
+		"person7 . .";
+	}
 .person__profile{
 	height: 100%;
 	width: 100%;
@@ -121,25 +122,37 @@ h3{
 .person__profile--6{
 	grid-area: person6;
 }
+#person__profile--picture-7{
+	background-image: url('../assets/images/profile/marco.jpg')
+}
+.person__profile--7{
+	grid-area: person7;
+}
 .page-footer{
 	margin-top: 40px;
 }
 @media screen and (max-width: 992px){
 	.grid__display--people{
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(3, 400px);
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 400px);
 		grid-template-areas: 
 			"person1 person2"
 			"person3 person4" 
-			"person5 person6";
+			"person5 person6"
+			"person7 .";
 	}
 }
 @media screen and (max-width: 550px){
 	.grid__display--people{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, 400px);
+		grid-template-rows: repeat(7, 400px);
 		grid-template-areas: 
-			"person1" "person2" "person3"
-			"person4" "person5" "person6";
+			"person1" 
+			"person2" 
+			"person3"
+			"person4" 
+			"person5" 
+			"person6"
+			"person7";
 	}
 }
