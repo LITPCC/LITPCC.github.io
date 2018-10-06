@@ -12,14 +12,25 @@
 		<script src="./assets/libraries/materialize/materialize.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-		<script src="main.js"></script>
+		<script src="js/script.js"></script>
 	</head>
-	<body>
+	<body onload="load();">
+		<div class="navbar-fixed">
+			<nav>	
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">LITPCC</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="#about">Who Are We?</a></li>
+						<!-- <li><a href="./Projects">What We Do</a></li> -->
+					</ul>
+				</div>
+			</nav>
+		</div>
 		<div class="hero">
 			<div class="hero__overlay valign-wrapper">
 				<div class="hero__overlay--text">
 					<h2>Leadership in Technology</h2>
-					STEM Super Club
+					STEM Super Club at PCC
 					<br>
 					<a class="hero__overlay--btn btn-large waves-effect red darken-4" href="https://csthorn.com/lit">Sign Up</a>
 				</div>
@@ -29,7 +40,7 @@
 			Join the Discord
 			<a class="btn-flat btn__discord" href="https://discord.gg/mPmp8tw"></a>
 		</div>
-		<div class="grid__display--header">
+		<div id="about" class="grid__display--header section scrollspy">
 			<h3>The Board Members</h3>
 			The people behind LIT
 		</div>
@@ -60,28 +71,35 @@
 					<div id="person__profile--picture-4" class="person__profile--picture"></div>
 					<div class="person__profile--desc">
 						<div class="person__profile--name">Tim</div>
-						Web dude
+						Tim
 					</div>
 				</div>
 				<div class="person__profile card person__profile--5">
 					<div id="person__profile--picture-5" class="person__profile--picture"></div>
 					<div class="person__profile--desc">
 						<div class="person__profile--name">Hiron</div>
-						Other dude
+						Hiron
 					</div>
 				</div>
 				<div class="person__profile card person__profile--6">
 					<div id="person__profile--picture-6" class="person__profile--picture"></div>
 					<div class="person__profile--desc">
 						<div class="person__profile--name">Richard</div>
-						Last dude
+						Richard
 					</div>
 				</div>
 				<div class="person__profile card person__profile--7">
 					<div id="person__profile--picture-7" class="person__profile--picture"></div>
 					<div class="person__profile--desc">
 						<div class="person__profile--name">Marco</div>
-						"Yo! I'm Marco" is fine for now. That or, 4th dude or dude with the sweater since it seems those are some options
+						Marco
+					</div>
+				</div>
+				<div class="person__profile card person__profile--8">
+					<div id="person__profile--picture-8" class="person__profile--picture"></div>
+					<div class="person__profile--desc">
+						<div class="person__profile--name">Gavin</div>
+						Optimistic Nihilist, Cruel Humanitarian
 					</div>
 				</div>
 			</div>
@@ -103,7 +121,7 @@
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-			© 2018 Copyright Ryan Yang
+			Made with <span style="color: #e25555;">&hearts;</span> by Ryan Yang
 			<a class="grey-text text-lighten-4 right" href="https://github.com/LITPCC/LITPCC.github.io">Github</a>
 			</div>
 		</div>
