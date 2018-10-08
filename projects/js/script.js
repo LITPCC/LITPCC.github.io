@@ -8,6 +8,8 @@ function getReq(url, callback){
         });
 }
 function load(){
+    elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
     let url = 'https://api.github.com/search/repositories?q=topic:litpcc';
     getReq(url, displayProjects);
 }
