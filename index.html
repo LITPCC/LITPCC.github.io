@@ -7,6 +7,7 @@
 		<title>Leadership In Tech: PCC</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<link rel="stylesheet" type="text/css" href="./assets/libraries/materialize/materialize.min.css">
 		<script src="./assets/libraries/materialize/materialize.min.js"></script>
@@ -19,20 +20,25 @@
 			<nav>	
 				<div class="nav-wrapper">
 					<a href="#" class="brand-logo">LITPCC</a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="#about">Who Are We?</a></li>
-						<!-- <li><a href="./Projects">What We Do</a></li> -->
+						<li><a href="./Projects/index.html">What We Do</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="#about" class="sidenav-close">Who Are We?</a></li>
+			<li><a href="./Projects/index.html">What We Do</a></li>
+		</ul>
 		<div class="hero">
 			<div class="hero__overlay valign-wrapper">
 				<div class="hero__overlay--text">
 					<h2>Leadership in Technology</h2>
 					STEM Super Club at PCC
 					<br>
-					<a class="hero__overlay--btn btn-large waves-effect red darken-4" href="https://csthorn.com/lit">Sign Up</a>
+					<a class="hero__overlay--btn btn-large deep-purple waves-effect lighten-2" href="https://csthorn.com/lit">Sign Up</a>
 				</div>
 			</div>
 		</div>
