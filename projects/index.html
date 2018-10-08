@@ -10,7 +10,10 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<link rel="stylesheet" type="text/css" href="../assets/libraries/materialize/materialize.min.css">
-		<script src="../assets/libraries/materialize/materialize.min.js"></script>
+        <script src="../assets/libraries/materialize/materialize.min.js"></script>
+        
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 		<script src="js/script.js"></script>
@@ -22,7 +25,7 @@
 					<a href="#" class="brand-logo">LITPCC</a>
 					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#about">Who Are We?</a></li>
+						<li><a href="../index.html#about">Who Are We?</a></li>
 						<li><a href="#">What We Do</a></li>
 					</ul>
 				</div>
@@ -31,7 +34,18 @@
 		<ul class="sidenav" id="mobile-demo">
 			<li><a href="#about" class="sidenav-close">Who Are We?</a></li>
 			<li><a href="#">What We Do</a></li>
-		</ul>
+        </ul>
+        <div class="container">
+			<div class="project-gallery__header">
+				Member Projects
+				<br>
+				<span>Stuff we're making</span>
+			</div>
+				<div id="project-gallery">
+				</div>
+			</div>
+        </div>
+
 		<footer class="page-footer">
 		<div class="container">
 			<div class="row">

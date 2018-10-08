@@ -14,7 +14,54 @@ h3{
 nav{
 	background-color: #9179f2;
 }
+.project-gallery__header{
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+.project-gallery__header span{
+    font-size: 15px;
+    color: grey;
+}
+#project-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.project-header{
+    height: 100px;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+}
+.project-avatar{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    float: left;
+}
+.project-title{
+    font-size: 20px;
+}
+.project-user{
+    color: grey;
+    font-size: 12px;
+}
+.project-description{
+    font-size: 16px;
+}
 .page-footer{
 	margin-top: 40px;
 	background-color: #9179f2;
+}
+@media screen and (max-width: 992px){
+	#project-gallery{
+		grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 550px){
+	#project-gallery{
+		grid-template-columns: 1fr;
 }
