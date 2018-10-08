@@ -64,17 +64,12 @@ nav{
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 40px;
 	grid-row-gap: 40px;
-	grid-template-rows: repeat(3, auto);
-	grid-template-areas: 
-		"person1 person2 person3"
-		"person4 person5 person6"
-		"person7 person8 .";
-	}
+	grid-template-rows: repeat(auto, auto);
+}
 .person__profile{
 	height: 100%;
 	width: 100%;
 	border-radius: 4px;
-	/* background-color: ; */
 }
 .person__profile--picture{
 	height: 200px;
@@ -90,53 +85,33 @@ nav{
 	padding: 20px;
 	text-align: center;
 }
-#person__profile--picture-1{
-	background-image: url('../assets/images/profile/kody.jpg')
+#person__profile--picture-kody{
+	background-image: url('../assets/images/profile/kody.jpg');
 }
-.person__profile--1{
-	grid-area: person1;
+#person__profile--picture-ryan{
+	background-image: url('../assets/images/profile/ryan.jpg');
 }
-#person__profile--picture-2{
-	background-image: url('../assets/images/profile/victor.jpg')
+#person__profile--picture-victor{
+	background-image: url('../assets/images/profile/victor.jpg');
 }
-.person__profile--2{
-	grid-area: person2;
+#person__profile--picture-evelyn{
+	background-image: url('../assets/images/profile/evelyn.jpg');
 }
-#person__profile--picture-3{
-	background-image: url('../assets/images/profile/evelyn.jpg')
+#person__profile--picture-tim{
+	background-image: url('../assets/images/profile/tim.jpg');
 }
-.person__profile--3{
-	grid-area: person3;
+#person__profile--picture-hiron{
+	background-image: url('../assets/images/profile/hiron.jpg');
 }
-#person__profile--picture-4{
-	background-image: url('../assets/images/profile/tim.jpg')
+#person__profile--picture-richard{
+	background-image: url('../assets/images/profile/richard.jpg');
 }
-.person__profile--4{
-	grid-area: person4;
+#person__profile--picture-marco{
+	background-image: url('../assets/images/profile/marco.jpg');
+	background-position: center;
 }
-#person__profile--picture-5{
-	background-image: url('../assets/images/profile/hiron.jpg')
-}
-.person__profile--5{
-	grid-area: person5;
-}
-#person__profile--picture-6{
-	background-image: url('../assets/images/profile/richard.jpg')
-}
-.person__profile--6{
-	grid-area: person6;
-}
-#person__profile--picture-7{
-	background-image: url('../assets/images/profile/marco.jpg')
-}
-.person__profile--7{
-	grid-area: person7;
-}
-#person__profile--picture-8{
-	background-image: url('../assets/images/profile/gavin.jpg')
-}
-.person__profile--7{
-	grid-area: person8;
+#person__profile--picture-gavin{
+	background-image: url('../assets/images/profile/gavin.jpg');
 }
 .page-footer{
 	margin-top: 40px;
@@ -145,26 +120,11 @@ nav{
 @media screen and (max-width: 992px){
 	.grid__display--people{
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(4, 400px);
-		grid-template-areas: 
-			"person1 person2"
-			"person3 person4" 
-			"person5 person6"
-			"person7 person8";
+		grid-template-rows: repeat(auto, 400px);
 	}
 }
 @media screen and (max-width: 550px){
 	.grid__display--people{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(7, 400px);
-		grid-template-areas: 
-			"person1" 
-			"person2" 
-			"person3"
-			"person4" 
-			"person5" 
-			"person6"
-			"person7"
-			"person8";
-	}
+		grid-template-rows: repeat(auto, 400px);
 }
