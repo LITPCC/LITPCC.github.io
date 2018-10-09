@@ -125,4 +125,5 @@ nav{
 @media screen and (max-width: 550px){
 	.grid__display--people{
 		grid-template-columns: 1fr;
+	}
 }
