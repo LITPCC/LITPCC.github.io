@@ -120,11 +120,9 @@ nav{
 @media screen and (max-width: 992px){
 	.grid__display--people{
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(auto, 400px);
 	}
 }
 @media screen and (max-width: 550px){
 	.grid__display--people{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(auto, 400px);
 }
