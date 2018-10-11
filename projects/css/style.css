@@ -28,6 +28,21 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
 }
+#project-col-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: auto;
+}
+#project-col-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: auto;
+}
+#project-col-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: auto;
+}
 .project-header{
     height: 100px;
     padding: 20px 20px 0 20px;
@@ -59,9 +74,17 @@ nav{
 }
 @media screen and (max-width: 992px){
 	#project-gallery{
-		grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #project-col-3{
+        display: none;
+    }
 }
 @media screen and (max-width: 550px){
 	#project-gallery{
-		grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    #project-col-3{
+        display: grid;
+    }
 }
