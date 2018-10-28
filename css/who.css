@@ -1,4 +1,6 @@
-
+#who-page{
+    padding: 0 50px 0 50px;
+}
 h3{
 	color: black;
 	font-weight: bold;
@@ -8,11 +10,12 @@ h3{
 	color: grey;
 }
 .grid__display--people{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
 	column-gap: 40px;
 	grid-row-gap: 40px;
-	grid-template-rows: repeat(auto, auto);
+    grid-template-rows: repeat(auto, auto);
+    margin-bottom: 50px;
 }
 .person__profile{
 	height: 100%;
@@ -61,13 +64,21 @@ h3{
 #person__profile--picture-gavin{
 	background-image: url('../assets/images/profile/gavin.jpg');
 }
-@media screen and (max-width: 1300px){
+@media screen and (min-width: 800px){
 	.grid__display--people{
-		grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media screen and (max-width: 800px){
+@media screen and (min-width: 1300px){
 	.grid__display--people{
-		grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
 	}
+}
+@media screen and (min-width: 2000px){
+    #who-page{
+        padding: 50px calc(50vw - 400px) 0 calc(50vw - 400px);
+    }
+    .grid__display--people{
+        width: 800px;
+    }
 }

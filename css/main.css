@@ -62,19 +62,13 @@ a{
 @keyframes fade{
     from{
         opacity: 1;
-        display: block;
+        /* display: block; */
     }to{
         opacity: 0;
-        display: none;
+        /* display: none; */
     }
 }
 #home-page{
-    background-color: #efefef;
-}
-#who-page{
-    /* background-color: #9a9a9a; */
-    padding: 0 50px 50px 50px;
-
 }
 #what-page{
     background-color: black;

@@ -1,8 +1,7 @@
 function load(){
     if(document.location.hash==""){
-        document.getElementById('home').classList += "selected";
+        router('home');
     }else{
-        // document.getElementById(document.location.hash.substr(1)).classList += "selected";
         router(document.location.hash.substr(1));
     }
 }
@@ -12,11 +11,12 @@ function router(page){
             element.firstChild.classList.remove('selected');
             let el = document.getElementById(element.firstChild.id + "-page");
             if(el.style.display == "block"){
+                el.classList = 'page';
+                void el.offsetWidth;
                 el.classList = 'page fade';
                 setTimeout(function(){
                     el.style.display = "none";
                 }, 250);
-                // el.style.display = "none";
             }else{
                 el.style.display = "none";
             }
