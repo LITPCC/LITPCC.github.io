@@ -1,0 +1,73 @@
+
+h3{
+	color: black;
+	font-weight: bold;
+}
+.grid__display--header{
+	text-align: center;
+	color: grey;
+}
+.grid__display--people{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 40px;
+	grid-row-gap: 40px;
+	grid-template-rows: repeat(auto, auto);
+}
+.person__profile{
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+}
+.person__profile--picture{
+	height: 200px;
+	background-color: grey;
+	background-position: 0% 20%;
+	background-size: cover;
+}
+.person__profile--name{
+	text-align: center;
+	font-weight: bold;
+}
+.person__profile--desc{
+	padding: 20px;
+	text-align: center;
+}
+#person__profile--picture-kody{
+	background-image: url('../assets/images/profile/kody.jpg');
+}
+#person__profile--picture-ryan{
+	background-image: url('../assets/images/profile/ryan.jpg');
+}
+#person__profile--picture-victor{
+	background-image: url('../assets/images/profile/victor.jpg');
+}
+#person__profile--picture-evelyn{
+	background-image: url('../assets/images/profile/evelyn.jpg');
+}
+#person__profile--picture-tim{
+	background-image: url('../assets/images/profile/tim.jpg');
+}
+#person__profile--picture-hiron{
+	background-image: url('../assets/images/profile/hiron.jpg');
+}
+#person__profile--picture-richard{
+	background-image: url('../assets/images/profile/richard.jpg');
+}
+#person__profile--picture-marco{
+	background-image: url('../assets/images/profile/marco.jpg');
+	background-position: center;
+}
+#person__profile--picture-gavin{
+	background-image: url('../assets/images/profile/gavin.jpg');
+}
+@media screen and (max-width: 1300px){
+	.grid__display--people{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 800px){
+	.grid__display--people{
+		grid-template-columns: 1fr;
+	}
+}

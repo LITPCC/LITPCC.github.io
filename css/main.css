@@ -1,0 +1,95 @@
+:root{
+    --theme-highlight: #a247ff;
+}
+*{
+    margin: 0;
+}
+body{
+    background-color: #efefef;
+    font-family: 'Montserrat', sans-serif;
+}
+li{
+    color: white;
+    font-size: 20px;
+    margin: 10vh 0 5vh 70px;
+}
+a{
+    color: white;
+}
+.selected{
+    border-bottom: 5px solid var(--theme-highlight);
+    color: var(--theme-highlight);
+}
+#root{
+    position: fixed;
+    top: 0;
+    left: 300px;
+    height: 100vh;
+    width: calc( 100vw - 300px );
+    background-color: white;
+}
+.div-background{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#side{
+    background-color: #151515;
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  10vh 10vh 50px repeat(6, 10vh);
+}
+.org_name{
+    background-image: url('../assets/org_name__bold.svg');
+    margin-top: 90px;
+    height: 40px;
+}
+.org_logo__icon{
+    background-image: url('../assets/org_logo__icon.svg');
+    margin-top: 70px;
+    height: 80px;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+        display: block;
+    }to{
+        opacity: 0;
+        display: none;
+    }
+}
+#home-page{
+    background-color: #efefef;
+}
+#who-page{
+    /* background-color: #9a9a9a; */
+    padding: 0 50px 50px 50px;
+
+}
+#what-page{
+    background-color: black;
+}
+
+#students-page{
+    background-color: #787878;
+}
+#donate-page{
+    background-color: #565656;
+}
+.fade{
+    animation: fade 250ms both;
+}
+.reverse{
+    animation-delay: 250ms;
+    animation-direction: reverse;
+}
