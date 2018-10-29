@@ -5,12 +5,11 @@
     margin: 0;
 }
 body{
-    background-color: #efefef;
+    background-color: grey;
     font-family: 'Montserrat', sans-serif;
 }
 li{
-    color: white;
-    font-size: 20px;
+    font-size: 18px;
     margin: 10vh 0 5vh 70px;
 }
 a{
@@ -23,9 +22,9 @@ a{
 #root{
     position: fixed;
     top: 0;
-    left: 300px;
+    left: 250px;
     height: 100vh;
-    width: calc( 100vw - 300px );
+    width: calc( 100vw - 250px );
     background-color: white;
 }
 .div-background{
@@ -39,19 +38,19 @@ a{
     top: 0;
     left:0;
     height: 100vh;
-    width: 300px;
+    width: 250px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  10vh 10vh 50px repeat(6, 10vh);
+    grid-template-rows:  12vh 12vh 50px repeat(6, 10vh);
 }
 .org_name{
     background-image: url('../assets/org_name__bold.svg');
-    margin-top: 90px;
-    height: 40px;
+    margin-top: 13vh;
+    height: 30px;
 }
 .org_logo__icon{
     background-image: url('../assets/org_logo__icon.svg');
-    margin-top: 70px;
+    margin-top: 8vh;
     height: 80px;
 }
 .page{
@@ -73,17 +72,27 @@ a{
 #what-page{
     background-color: black;
 }
-
-#students-page{
-    background-color: #787878;
-}
 #donate-page{
     background-color: #565656;
 }
 .fade{
-    animation: fade 250ms both;
+    animation: fade 300ms both;
 }
 .reverse{
-    animation-delay: 250ms;
     animation-direction: reverse;
+}
+@media screen and (min-width: 1000px){
+    li{
+        font-size: 20px;
+    }
+    .org_name{
+        height: 40px;
+    }
+    #side{
+        width: 300px;
+    }
+    #root{
+        left: 300px;
+        width: calc( 100vw - 300px );
+    }
 }

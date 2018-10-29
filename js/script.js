@@ -1,4 +1,5 @@
 function load(){
+    displayEvents();
     if(document.location.hash==""){
         router('home');
     }else{

@@ -1,0 +1,65 @@
+#students-page{
+    background-color: black;
+}
+.past-events{
+    color: maroon;
+}
+.event-bulletin-header{
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+.upcoming-events{
+    color: white;
+}
+.event-bulletin-header span{
+    font-size: 15px;
+    color: grey;
+}
+#event-bulletin{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+}
+.event-person{
+    text-align: center;
+    padding: 5px;
+}
+.event-avatar{
+    background-size: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    width: 80px;
+    height: 80px;
+}
+.event-description span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 2fr;
+}
+.event-splash{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 992px){
+    .event-grid{
+        grid-template-columns: 4fr 2fr;
+    }
+    .event-person{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .event-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    .event-person{
+        display: grid;
+    }
+}

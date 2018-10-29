@@ -13,7 +13,10 @@
         <script src="assets/libraries/materialize/materialize.min.js"></script>
 
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/students.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/who.css" />
+        <script src="js/students.js"></script>
+        <script src="js/events.js"></script>
         <script src="js/script.js"></script>
     </head>
     <body onload="load();">
@@ -28,7 +31,9 @@
             <li onclick="router('donate');"><a id="donate" href="#donate">Donate</a></li>
         </ul>
         <div id="root">
-            <div id="home-page" class="page"></div>
+            <div id="home-page" class="page">
+
+            </div>
             <div id="who-page" class="page">
                 <div id="about" class="grid__display--header">
                     <h3>The Board Members</h3>
@@ -80,9 +85,30 @@
                     </div>
                 </div>
             </div>
-            <div id="what-page" class="page"></div>
-            <div id="students-page" class="page"></div>
-            <div id="donate-page" class="page"></div>
+            <div id="what-page" class="page">
+
+            </div>
+            <div id="students-page" class="page">
+                <div class="container">
+                    <div class="event-bulletin-header">
+                        Events
+                        <br>
+                        <span>Stuff we're hosting</span>
+                    </div>
+                        <div id="event-bulletin">
+                            <div class="upcoming-events">
+                                Upcoming Events
+                            </div>
+                            <!-- <div class="past-events">
+                                Past Events
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="donate-page" class="page">
+
+            </div>
         </div>
     </body>
 </html>
