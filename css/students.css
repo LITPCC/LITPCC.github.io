@@ -1,7 +1,7 @@
 #students-page{
     background-color: black;
 }
-.past-events{
+#past-events{
     color: maroon;
 }
 .event-bulletin-header{
@@ -10,7 +10,7 @@
     padding: 40px;
     font-size: 30px;
 }
-.upcoming-events{
+#upcoming-events span{
     color: white;
 }
 .event-bulletin-header span{
@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 20px;
+    margin-bottom: 50px;
 }
 .event-person{
     text-align: center;

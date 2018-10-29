@@ -3,7 +3,7 @@ function displayEvents(){
         parseRepo(repo, index);
     });
 }
-function parseRepo({name, organizer, date, images, location, link, description}, index){
+function parseRepo({name, organizer, date, images, location, past, link, description}, index){
     let eventTemplate = `
         <div class="card waves-effect">
             <div class="event-grid" onclick="window.open('${link}', '_blank');">
@@ -31,5 +31,9 @@ function parseRepo({name, organizer, date, images, location, link, description},
             </div>
         </div>
     `;
-    document.getElementById('event-bulletin').insertAdjacentHTML('beforeend', eventTemplate);
+    if(past){
+        document.getElementById('past-events').insertAdjacentHTML('beforeend', eventTemplate);
+    }else{
+        document.getElementById('upcoming-events').insertAdjacentHTML('beforeend', eventTemplate);
+    }
 }
