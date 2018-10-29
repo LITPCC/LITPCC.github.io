@@ -1,5 +1,6 @@
 #students-page{
     background-color: black;
+    padding: 50px;
 }
 #past-events{
     color: maroon;
@@ -35,6 +36,7 @@
     height: 80px;
 }
 .event-description span{
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }

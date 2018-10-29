@@ -5,7 +5,7 @@
     margin: 0;
 }
 body{
-    background-color: grey;
+    background-color: #151515;
     font-family: 'Montserrat', sans-serif;
 }
 li{
@@ -25,7 +25,7 @@ a{
     left: 250px;
     height: 100vh;
     width: calc( 100vw - 250px );
-    background-color: white;
+    background-color: #151515;
 }
 .div-background{
     background-size: contain;
@@ -61,19 +61,12 @@ a{
 @keyframes fade{
     from{
         opacity: 1;
-        /* display: block; */
     }to{
         opacity: 0;
-        /* display: none; */
     }
-}
-#home-page{
 }
 #what-page{
     background-color: black;
-}
-#donate-page{
-    background-color: #565656;
 }
 .fade{
     animation: fade 300ms both;
