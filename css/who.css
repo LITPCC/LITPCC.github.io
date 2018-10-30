@@ -82,9 +82,6 @@ h3{
 }
 @media screen and (min-width: 2000px){
     #who-page{
-        padding: 50px calc(50vw - 400px) 0 calc(50vw - 400px);
-    }
-    .grid__display--people{
-        width: 800px;
+        padding: 50px 200px 0 200px;
     }
 }
