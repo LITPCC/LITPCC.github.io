@@ -65,7 +65,12 @@ h3{
 #person__profile--picture-gavin{
 	background-image: url('../assets/images/profile/gavin.jpg');
 }
-@media screen and (min-width: 800px){
+@media screen and (max-width: 600px){
+	#who-page{
+		padding: 56px 20px 0 20px;
+	}
+}
+@media screen and (min-width: 850px){
 	.grid__display--people{
         grid-template-columns: repeat(2, 1fr);
 	}

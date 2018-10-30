@@ -1,6 +1,6 @@
 #students-page{
     background-color: black;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
 }
 #past-events{
     color: maroon;
@@ -36,7 +36,7 @@
     height: 80px;
 }
 .event-description span{
-    color: black;
+    color: black !important;
     font-weight: bold;
     font-size: 20px;
 }
@@ -49,6 +49,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 @media screen and (max-width: 992px){
     .event-grid{
         grid-template-columns: 4fr 2fr;
@@ -57,8 +58,12 @@
         display: none;
     }
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
+    #students-page{
+        padding: 20px;
+    }
     .event-grid{
+        text-align: center;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
     }

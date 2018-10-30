@@ -1,3 +1,4 @@
+let isSideBarOut = true;
 function load(){
     displayEvents();
     if(document.location.hash==""){
@@ -28,4 +29,20 @@ function router(page){
     setTimeout(function(){
         document.getElementById(page + "-page").style.display = "block";
     }, 250);
+    toggleSideBar();
+}
+function toggleSideBar(){
+    if(window.innerWidth <= 600){
+        let sideID = document.getElementById('side')
+        if(!isSideBarOut){
+            sideID.classList = "";
+            void sideID.offsetWidth;
+            sideID.classList = "A-sidebar reverse";
+        }else{
+            sideID.classList = "";
+            void sideID.offsetWidth;
+            sideID.classList = "A-sidebar";
+        }
+        isSideBarOut = !isSideBarOut;
+    }
 }
