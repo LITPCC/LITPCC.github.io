@@ -1,6 +1,7 @@
 let isSideBarOut = true;
 function load(){
     displayEvents();
+    whatjs();
     if(document.location.hash==""){
         router('home');
     }else{

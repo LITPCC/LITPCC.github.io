@@ -91,9 +91,6 @@ a{
 .A-sidebar{
     animation: sidebar 200ms both;
 }
-#what-page{
-    background-color: black;
-}
 .fade{
     animation: fade 300ms both;
 }

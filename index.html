@@ -4,8 +4,10 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta author="Ryan Yang">
-        <title>Leadership in Tech: PCC</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/svg" href="./assets/org_logo__icon.svg"/>
+        <title>Leadership in Tech: PCC</title>
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,12 +15,16 @@
         <link rel="stylesheet" type="text/css" href="assets/libraries/materialize/materialize.min.css">
         <script src="assets/libraries/materialize/materialize.min.js"></script>
 
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/students.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/support.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/who.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/what.css" />
         <script src="js/students.js"></script>
+        <script src="js/what.js"></script>
         <script src="js/events.js"></script>
         <script src="js/script.js"></script>
     </head>
@@ -100,7 +106,16 @@
                 </div>
             </div>
             <div id="what-page" class="page">
-
+                <div class="project-gallery__header">
+                    Member Projects
+                    <br>
+                    <span>Stuff we're making</span>
+                </div>
+                <div id="project-gallery">
+                    <div id="project-col-1"></div>
+                    <div id="project-col-2"></div>
+                    <div id="project-col-3"></div>
+                </div>
             </div>
             <div id="students-page" class="page">
                 <div class="event-bulletin-header">

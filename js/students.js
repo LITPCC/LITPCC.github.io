@@ -1,9 +1,9 @@
 function displayEvents(){
     events.forEach((repo, index) => {
-        parseRepo(repo, index);
+        parseEvent(repo, index);
     });
 }
-function parseRepo({name, organizer, date, images, location, past, link, description}, index){
+function parseEvent({name, organizer, date, images, location, past, link, description}, index){
     let eventTemplate = `
         <div class="card waves-effect">
             <div class="event-grid" onclick="window.open('${link}', '_blank');">

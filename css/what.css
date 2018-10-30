@@ -1,0 +1,95 @@
+#what-page{
+    background-color: black;
+    padding: 30px;
+}
+.project-gallery__header{
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+.project-gallery__header span{
+    font-size: 15px;
+    color: grey;
+}
+#project-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+}
+#project-col-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: auto;
+}
+#project-col-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: auto;
+}
+#project-col-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: auto;
+}
+.project-header{
+    height: 100px;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+}
+.project-avatar{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    float: left;
+}
+.project-title{
+    font-size: 20px;
+}
+.project-user{
+    color: grey;
+    font-size: 12px;
+}
+.project-description{
+    font-size: 16px;
+}
+@media screen and (min-width: 600px){
+	#project-gallery{
+        grid-template-columns: 1fr;
+    }
+    #project-col-3{
+        display: grid;
+    }
+}
+@media screen and (min-width: 850px){
+    #what-page{
+        padding: 40px;
+    }
+	#project-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #project-col-3{
+        display: none;
+    }
+}
+@media screen and (min-width: 1300px){
+    #what-page{
+        background-color: black;
+    }
+    #project-gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #project-col-3{
+        display: grid;
+    }
+}
+@media screen and (min-width: 2000px){
+    #what-page{
+        background-color: black;
+        padding: 20px 150px 100px 150px;
+    }
+}
