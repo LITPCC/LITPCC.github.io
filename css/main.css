@@ -1,0 +1,127 @@
+:root{
+    --theme-highlight: #a247ff;
+}
+*{
+    margin: 0;
+}
+body{
+    background-color: #151515;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 56px;
+    width: 100vw;
+    background-color: #151515;
+    z-index: 1;
+}
+i{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+li{
+    font-size: 18px;
+    margin: 10vh 0 5vh 70px;
+}
+a{
+    color: white;
+}
+.selected{
+    border-bottom: 5px solid var(--theme-highlight);
+    color: var(--theme-highlight);
+}
+#root{
+    position: fixed;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc( 100vw - 250px );
+    background-color: #151515;
+}
+.div-background{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#side{
+    background-color: #151515;
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  12vh 12vh 50px repeat(6, 10vh);
+    z-index: 2;
+}
+.org_name{
+    background-image: url('../assets/org_name__bold.svg');
+    margin-top: 13vh;
+    height: 30px;
+}
+.org_logo__icon{
+    background-image: url('../assets/org_logo__icon.svg');
+    margin-top: 8vh;
+    height: 80px;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes sidebar{
+    from{
+        left: 0px;
+    }to{
+        left: -250px;
+    }
+
+}
+.A-sidebar{
+    animation: sidebar 200ms both;
+}
+.fade{
+    animation: fade 300ms both;
+}
+.reverse{
+    animation-direction: reverse;
+}
+@media screen and (max-width: 600px){
+    nav{
+        display: block;
+    }
+    #side{
+        left: -250px;
+    }
+    #root{
+        left: 0;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    li{
+        font-size: 20px;
+    }
+    .org_name{
+        height: 40px;
+    }
+    #side{
+        width: 300px;
+    }
+    #root{
+        left: 300px;
+        width: calc( 100vw - 300px );
+    }
+}

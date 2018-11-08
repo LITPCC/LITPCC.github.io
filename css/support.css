@@ -1,0 +1,10 @@
+#support-page{
+    background-color: white;
+    font-size: 25px;
+    display: grid;
+    text-align: center;
+}
+.contact{
+    width: 100%;
+    text-align: center;
+}

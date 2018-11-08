@@ -1,125 +1,147 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta author="Ryan Yang">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Leadership In Tech: PCC</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta author="Ryan Yang">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#151515" />
 
-		<link rel="stylesheet" type="text/css" href="./assets/libraries/materialize/materialize.min.css">
-		<script src="./assets/libraries/materialize/materialize.min.js"></script>
+        <link rel="shortcut icon" type="image/svg" href="./assets/org_logo__icon.svg"/>
+        <title>Leadership in Tech: PCC</title>
 
-		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-		<script src="js/script.js"></script>
-	</head>
-	<body onload="load();">
-		<div class="navbar-fixed">
-			<nav>	
-				<div class="nav-wrapper">
-					<a href="#" class="brand-logo">LITPCC</a>
-					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#about">Who Are We?</a></li>
-						<li><a href="./projects/">What We Do</a></li>
-						<li><a href="./events/">Events</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<ul class="sidenav" id="mobile-demo">
-			<li><a href="#about" class="sidenav-close">Who Are We?</a></li>
-			<li><a href="./projects/">What We Do</a></li>
-			<li><a href="./events/">Events</a></li>
-		</ul>
-		<div class="hero">
-			<div class="hero__overlay valign-wrapper">
-				<div class="hero__overlay--text">
-					<h2>Leadership in Technology</h2>
-					STEM Super Club at PCC
-					<br>
-					<a class="hero__overlay--btn btn-large deep-purple waves-effect lighten-2" href="https://csthorn.com/lit">Sign Up</a>
-				</div>
-			</div>
-		</div>
-		<div class="banner__link--discord">
-			Join the Discord
-			<a class="btn-flat btn__discord" href="https://discord.gg/mPmp8tw"></a>
-		</div>
-		<div id="about" class="grid__display--header section scrollspy">
-			<h3>The Board Members</h3>
-			The people behind LIT
-		</div>
-		<div class="container">
-			<div class="grid__display--people">
-				<div class="person__profile card person__profile--kody">
-					<div id="person__profile--picture-kody" class="person__profile--picture"></div>
-					<div class="person__profile--desc">
-						<div class="person__profile--name">Kody Kinzie</div>
-						CS student and infosec researcher interested in ethical hacking, Wi-Fi security,  Arduino/Raspberry Pi platforms, urban exploration, and photography.
-					</div>
-				</div>
-				<div class="person__profile card person__profile--ryan">
-					<div id="person__profile--picture-ryan" class="person__profile--picture"></div>
-					<div class="person__profile--desc">
-						<div class="person__profile--name">Ryan Yang</div>
-						Front-end developer with a strong interest on writing cool software with the latest technologies available.
-					</div>
-				</div>
-				<div class="person__profile card person__profile--gavin">
-					<div id="person__profile--picture-gavin" class="person__profile--picture"></div>
-					<div class="person__profile--desc">
-						<div class="person__profile--name">Gavin Gutner</div>
-						Embraced True Nihilism and is currently enacting it's philosophy.  Likes playing the Sims and NiEr: Automata, draws in his spare time and is a completely normal human being. Also is working on a graphic novel "Once I learn how to draw" that is.
-					</div>
-				</div>
-				<div class="person__profile card person__profile--evelyn">
-					<div id="person__profile--picture-evelyn" class="person__profile--picture"></div>
-					<div class="person__profile--desc">
-						<div class="person__profile--name">Evelyn Lu</div>
-						Fueled by logic, curiosity, and boredom. Sometimes I make random things with or without my friends.
-					</div>
-				</div>
-				<div class="person__profile card person__profile--marco">
-					<div id="person__profile--picture-marco" class="person__profile--picture"></div>
-					<div class="person__profile--desc">
-						<div class="person__profile--name">Marco Aguilar</div>
-						Newly sprung Computer Science major and aspiring creator.
-					</div>
-				</div>
-				
-				<div class="person__profile card person__profile--victor">
-					<div id="person__profile--picture-victor" class="person__profile--picture"></div>
-					<div class="person__profile--desc">
-						<div class="person__profile--name">Victor Tang</div>
-						CS major and electronics designer. Likes to create things that solve practical problems.
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer class="page-footer">
-		<div class="container">
-			<div class="row">
-			<div class="col l6 s12">
-				<h5 class="white-text">LIT PCC</h5>
-				<p class="grey-text text-lighten-4">We aim to provide a platform for students to socialize, develop skills, discover interests, and collaborate.</p>
-			</div>
-			<div class="col l4 offset-l2 s12">
-				<h5 class="white-text">Links</h5>
-				<ul>
-				<li><a class="grey-text text-lighten-3" href="https://twitter.com/LITpcc">Twitter</a></li>
-				<li><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UC7MsOTrWzbNeCRAEsCfHyKQ">Youtube</a></li>
-			</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-			Made with <span style="color: #e25555;">&hearts;</span> by Ryan Yang
-			<a class="grey-text text-lighten-4 right" href="https://github.com/LITPCC/LITPCC.github.io">Github</a>
-			</div>
-		</div>
-		</footer>
-	</body>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="assets/libraries/materialize/materialize.min.css">
+        <script src="assets/libraries/materialize/materialize.min.js"></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/students.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/support.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/who.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/what.css" />
+        <script src="js/students.js"></script>
+        <script src="js/what.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="load();">
+        <nav>
+            <i onclick="toggleSideBar();" class="material-icons">menu</i>
+        </nav>
+        <ul id="side">
+            <div class="org_logo__icon div-background"></div>
+            <div class="org_name div-background"></div>
+            <li></li>
+            <li onclick="router('home');"><a id="home" href="#home">Home</a></li>
+            <li onclick="router('who');"><a id="who" href="#who">Who We Are</a></li>
+            <li onclick="router('what');"><a id="what" href="#what">What We Do</a></li>
+            <li onclick="router('students');"><a id="students" href="#students">For Students</a></li>
+            <li onclick="router('support');"><a id="support" href="#support">Support Us</a></li>
+        </ul>
+        <div id="root">
+            <div id="home-page" class="page">
+                <div class="hero">
+                    <div class="hero__overlay valign-wrapper">
+                        <div class="hero__overlay--text">
+                            <h2>Leadership in Technology</h2>
+                            STEM Super Club at PCC
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="who-page" class="page">
+                <div id="about" class="grid__display--header">
+                    <h3>The Board Members</h3>
+                    The people behind LIT
+                </div>
+                <div class="grid__display--people">
+                    <div class="person__profile card person__profile--kody">
+                        <div id="person__profile--picture-kody" class="person__profile--picture"></div>
+                        <div class="person__profile--desc">
+                            <div class="person__profile--name">Kody Kinzie</div>
+                            CS student and infosec researcher interested in ethical hacking, Wi-Fi security,  Arduino/Raspberry Pi platforms, urban exploration, and photography.
+                        </div>
+                    </div>
+                    <div class="person__profile card person__profile--ryan">
+                        <div id="person__profile--picture-ryan" class="person__profile--picture"></div>
+                        <div class="person__profile--desc">
+                            <div class="person__profile--name">Ryan Yang</div>
+                            Front-end developer with a strong interest on writing cool software with the latest technologies available.
+                        </div>
+                    </div>
+                    <div class="person__profile card person__profile--gavin">
+                        <div id="person__profile--picture-gavin" class="person__profile--picture"></div>
+                        <div class="person__profile--desc">
+                            <div class="person__profile--name">Gavin Gutner</div>
+                            Embraced True Nihilism and is currently enacting it's philosophy.  Likes playing the Sims and NiEr: Automata, draws in his spare time and is a completely normal human being. Also is working on a graphic novel "Once I learn how to draw" that is.
+                        </div>
+                    </div>
+                    <div class="person__profile card person__profile--evelyn">
+                        <div id="person__profile--picture-evelyn" class="person__profile--picture"></div>
+                        <div class="person__profile--desc">
+                            <div class="person__profile--name">Evelyn Lu</div>
+                            Fueled by logic, curiosity, and boredom. Sometimes I make random things with or without my friends.
+                        </div>
+                    </div>
+                    <div class="person__profile card person__profile--marco">
+                        <div id="person__profile--picture-marco" class="person__profile--picture"></div>
+                        <div class="person__profile--desc">
+                            <div class="person__profile--name">Marco Aguilar</div>
+                            Newly sprung Computer Science major and aspiring creator.
+                        </div>
+                    </div>
+                    
+                    <div class="person__profile card person__profile--victor">
+                        <div id="person__profile--picture-victor" class="person__profile--picture"></div>
+                        <div class="person__profile--desc">
+                            <div class="person__profile--name">Victor Tang</div>
+                            CS major and electronics designer. Likes to create things that solve practical problems.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="what-page" class="page">
+                <div class="project-gallery__header">
+                    Member Projects
+                    <br>
+                    <span>Stuff we're making</span>
+                </div>
+                <div id="project-gallery">
+                    <div id="project-col-1"></div>
+                    <div id="project-col-2"></div>
+                    <div id="project-col-3"></div>
+                </div>
+            </div>
+            <div id="students-page" class="page">
+                <div class="event-bulletin-header">
+                    Events
+                    <br>
+                    <span>Stuff we're hosting</span>
+                </div>
+                <div id="event-bulletin">
+                    <div id="upcoming-events">
+                        <span>Upcoming Events</span>
+                    </div>
+                    <div id="past-events">
+                        Past Events
+                    </div>
+                </div>
+            </div>
+            <div id="support-page" class="page">
+                <div class="page valign-wrapper">
+                    <div class="contact">
+                        To support LIT, contact us at: 
+                        <br>
+                        qyang20@go.pasadena.edu
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
