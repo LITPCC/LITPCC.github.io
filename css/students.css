@@ -49,6 +49,9 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.student-links{
+    text-align: center;
+}
 
 @media screen and (max-width: 992px){
     .event-grid{
